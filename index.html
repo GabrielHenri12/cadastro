@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="cadastro">
+        <div class="container">
+            <h1>Cadastro</h1>
+            <form action="login.html">
+                <div class="input">
+                    <div class="singleInput">
+                        <input required type="text" name="nome" id="nome">
+                        <label for="nome" id="labelNome">Nome:</label>
+                    </div>
+
+                    <div class="singleInput">
+                        <input required type="text" name="nome de usuario"  id="nomeUsuario">
+                        <label for="nomeUsuario" id="labelnomeUsuario">Nome de Usuário:</label>
+                    </div>
+
+                    <div class="singleInput">
+                        <input required type="email" name="Email"  id="email">
+                        <label for="email" id="LabelEmail">Email:</label>
+                    </div>
+
+                    <div class="singleInput">
+                        <input required type="password" name="senha"  id="senha">
+                        <label for="senha" id="labelSenha">Senha:</label>
+                        <img src="src/olho.png" id="verSenha" alt="Visualizar Senha">
+                    </div>
+
+                    <div class="singleInput">
+                        <input required type="password" name="confirmSenha" id="confirmSenha">
+                        <label for="confirmSenha" id="labelConfirmSenha">Confirmar Senha:</label>
+                        <img src="src/olho.png" id="verConfSenha" alt="Visualizar Senha">
+                    </div>
+
+                    <button onclick="cadastrar()" id="enviar">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
